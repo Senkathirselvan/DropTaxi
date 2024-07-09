@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-07-09 10:37:56.624973",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "phone_no",
+  "column_break_lnzi",
+  "vehicle_type",
+  "pickup_date__and_time",
+  "section_break_vjd8",
+  "trip_moad",
+  "places"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_no",
+   "fieldtype": "Phone",
+   "in_list_view": 1,
+   "label": "Phone No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_lnzi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Vehicle Type",
+   "fieldname": "vehicle_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Vehicle Type",
+   "options": "Vehicle Type\nCar\nBus\nVan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pickup_date__and_time",
+   "fieldtype": "Datetime",
+   "label": "Pickup Date  and Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_vjd8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Select Trip Moad",
+   "fieldname": "trip_moad",
+   "fieldtype": "Select",
+   "label": "Trip Moad",
+   "options": "Select Trip Moad\nSingle Trip\nDouble Trip",
+   "reqd": 1
+  },
+  {
+   "fieldname": "places",
+   "fieldtype": "Table",
+   "label": "Places",
+   "options": "Trip Moad",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-07-09 13:22:27.237046",
+ "modified_by": "Administrator",
+ "module": "DropTaxi",
+ "name": "Customer Data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
